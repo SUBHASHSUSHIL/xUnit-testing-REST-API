@@ -14,7 +14,7 @@ namespace xUnit_testing_REST_api.Datas
         {
         }
         
-        public DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
 
     }
 }
