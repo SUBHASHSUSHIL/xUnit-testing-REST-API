@@ -19,8 +19,7 @@ For most service tests, I used **Entity Framework Core’s InMemory provider**:
 
 ```csharp
 var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-    .UseInMemoryDatabase("TestDb")
-    .Options;
+    .UseInMemoryDatabase("TestDb").Options;
 
 using var context = new ApplicationDbContext(options);
 var service = new EmployeeService(context);
